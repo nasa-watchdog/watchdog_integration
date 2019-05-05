@@ -10,7 +10,7 @@
 #include <nfc/nfc.h>
 #include <string.h>
 
-static char *library[6] = {"04  22  33  3a  ed  4c  81  ","04  81  1f  3a  ed  4c  80  ","04  7b  1d  3a  ed  4c  80  ","04  c8  25  3a  ed  4c  80  ","04  53  36  3a  ed  4c  81  ","04  5b  36  3a  ed  4c  81  "};
+static char *library[6] = {(char*)"04  22  33  3a  ed  4c  81  ",(char*)"04  81  1f  3a  ed  4c  80  ",(char*)")04  7b  1d  3a  ed  4c  80  ",(char*)"04  c8  25  3a  ed  4c  80  ",(char*)"04  53  36  3a  ed  4c  81  ",(char*)"04  5b  36  3a  ed  4c  81  "};
 
 static void
 print_hex(const uint8_t *pbtData, const size_t szBytes)
